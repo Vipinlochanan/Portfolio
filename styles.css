@@ -1,0 +1,308 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+
+* {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  outline: none;
+  border: none;
+  font-family: "Poppins", sans-serif;
+  color: rgb(255, 255, 255);
+}
+
+body {
+  height: 100vw;
+  justify-content: center;
+  align-items: center;
+}
+
+body::before {
+
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vw;
+  background-image: url(images/background.png);
+}
+
+section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+}
+
+
+.background-box {
+  background-color: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(12px);
+  border: 5px solid rgba(31, 1, 1, 0.2);
+  box-shadow: inset 0 0 10px rgba(255, 255, 255, 0.2);
+  border-radius: 30px;
+  height: 95vh;
+  width: 90%;
+  overflow: hidden;
+}
+/*header section*/
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header-logo{
+  float: left;
+  width: 75px;
+  height: 50px;
+}
+.header-title {
+  margin-top: 10px;
+  font-size: x-large;
+  padding-top: 5px;
+}
+.header-con{
+  padding-left: 110px;
+  padding-top: 90px;
+}
+#hi{
+  font-size: 25px;
+}
+#vipin{
+  color: aqua;
+  font-size: 35px;
+}
+.check-btn{
+  font-size: 50px;
+  font-weight: 500;
+  color: white;
+  z-index: 1;
+}
+nav {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  z-index:-1;
+  margin: 10px;
+  
+}
+.nav-items
+ {
+  font-size: 20px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  text-decoration: none;
+  text-transform: capitalize;
+  cursor: pointer;
+  transition: 0.3s;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  color: #b4b4bb ;
+}
+.active {
+  font-weight: 500;
+  color:rgb(255, 255, 255);
+  padding:4px 5px;
+  border: 3px solid rgb(255, 255, 255);
+  border-radius: 10px;
+}
+
+
+
+.header-dis{
+  font-size: smaller;
+  width: 450px;
+  text-align: justify;
+}
+.header-img {
+  width: 500px;
+  height: 350px;
+  padding-bottom: 30px;
+  display: block;
+  
+  opacity: 15%;
+}
+.hero-btn {
+  margin-left: 50px;
+  font-size: 18px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  background-color: transparent;
+  color: white;
+  border: 2px solid white;
+  border-radius: 15px;
+  height: 50px;
+  width: 150px;
+  margin-top: -150px;
+  z-index: 2;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.hero-btn:hover {
+  background-color: white;
+  color: black;
+  width: 200px;
+}
+/*socialmedia icon section*/
+
+#git:hover {
+  background-size: 100%;
+  background-color: #000000;
+}
+#whatsapp:hover {
+  background-size: 100%;
+  background-color: #00FF26;
+}
+#linkedin:hover {
+  background-size: 100%;
+  background-color: #0077B5;
+}
+ul{
+  display: flex;
+  margin-top: 40px;
+  text-align: center;  
+}
+
+ul li .fa{
+  position: relative;
+  display: block;
+  color: #f0e6e6;
+  font-size: 30px;
+  height: 45px;
+  width: 45px;
+  line-height: 40px;
+  border-radius: 50%;
+  margin-left: 25px;
+  margin: 0 10px;
+  
+}
+a{
+  text-decoration: none;
+}
+
+/*project section*/
+
+.card-container
+{
+    
+    display:flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap :  25px;
+    margin-top: 20px;
+    height: 300PX;
+    
+}
+.card{
+    border: none;
+    width: 17%;
+    background-color: transparent;
+    border-radius: 10px;
+    overflow: hidden;
+    transition:transform 0.6s ease; ;
+   
+}
+.card:hover{
+    transform: translateY(-30px);
+    border: 1px solid black;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0,0.6);
+    background-color:rgb(97, 91, 91) ;
+    backface-visibility: 40%; 
+    visibility: visible;  
+}
+.card_content p:hover {
+  visibility: visible;
+  }
+.card .card_btn:hover{
+  transform: translateY(-10px);
+  font-weight: 600;
+  box-shadow: 2px 2px 2px #000000;
+  color: #0e0e0e;
+  visibility: visible;
+}  
+.card img{
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+.card_content{
+    padding: 10px;
+    justify-items: center;
+    
+}
+
+.card_content h1{
+    font-size: 16PX;
+    font-weight: 600;
+    margin-bottom: 8px;
+    text-transform: uppercase;
+    
+}
+.card_content p{
+    font-size: 11PX;
+    margin-bottom: 5px;
+    width: 102%;
+    height: 45px;
+    text-align: center;
+    transition: transform 0.6s ;
+     
+}
+.card_btn{
+    display: inline-block;
+    background-color: rgb(255, 255, 255);
+    color: #000000;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 15px;
+    padding: 3px 8px;
+    text-transform: uppercase;
+    margin-top:30px; 
+    transition:transform 0.6s ease;     
+}
+
+/* About Section */
+
+.btn-outline-warning:hover {
+  border: 1px solid black;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0,0.6);
+  border-radius: 5px;
+  backface-visibility: 40%; 
+  visibility: visible;  
+}
+
+
+/*Contact section*/
+#address
+{
+  padding-left:450px;
+  padding-top:50px;
+  text-transform: uppercase;
+  font-size: large;
+}
+
+#bottamsocial{
+ margin-left: 450px;
+}
+
+/* Footer */
+
+.footer{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-left: 50px;
+  padding: 6px;
+  margin-top: 40px;
+  font-size: 15px;
+  background-color: #c3c4bd;
+  border-radius: 8px;
+  opacity: 40%;
+  color: black;
+ 
+}
